@@ -8,20 +8,20 @@ app.use(express.static('public'))
 
 // Create the routes
 
-app.get('/', (request, response, next) => {
-    response.sendFile(__dirname + '/views/home.html')
+app.get('/views/home.html', (request, response, next) => {
+    response.sendFile(__dirname + '/views/home.html');
 })
 
-app.get('/', (request, response, next) => {
-    response.sendFile(__dirname + '/views/about.html')
+app.get('/views/about.html', (request, response, next) => {
+    response.sendFile(__dirname + '/views/about.html');
 })
 
-app.get('/', (request, response, next) => {
-    response.sendFile(__dirname + '/views/works.html')
+app.get('/views/works.html', (request, response, next) => {
+    response.sendFile(__dirname + '/views/works.html');
 })
 
-app.get('/', (request, response, next) => {
-    response.sendFile(__dirname + '/views/photo-gallery.html')
+app.get('/views/photoGallery.html', (request, response, next) => {
+    response.sendFile(__dirname + '/views/photoGallery.html');
 })
 
 app.listen(8000, () => console.log("I'm listening on port 8000!"));

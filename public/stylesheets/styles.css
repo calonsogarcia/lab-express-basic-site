@@ -1,5 +1,15 @@
-.navbar{
+.header{
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
-    
+    align-content: flex-start;
+}
+
+
+.text{
+    line-height: 1.5rem;
+}
+
+.strong{
+    font-weight: bold;
 }
